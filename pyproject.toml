@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "es-adry-pia"
+version = "1.0.0"
+description = "Artificial Intelligence Programming Subject"
+authors = ["Adrián Mateos Pérez"]
+license = "GPL-3.0 license"
+readme = "README.md"
+packages = [{include = "tasks"}, {include = "exercises"}]
+
+[tool.poetry.scripts]
+task1 = "tasks.task1:run"
+exerciseexample = "exercises.example:run"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
