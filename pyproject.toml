@@ -9,10 +9,17 @@ packages = [{include = "tasks"}, {include = "exercises"}]
 
 [tool.poetry.scripts]
 task1 = "tasks.task1:run"
-exerciseexample = "exercises.example:run"
+rps = "exercises.RPS_Basic:main"
+stateMachine = "exercises.StateMachine:main"
+practica01 = "practicaguiada01.api:main"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = ">=3.12,<3.13"
+boto3 = "^1.28.77"
+flask = "^3.0.0"
+python-dotenv = "^1.0.0"
+opencv-python = "^4.8.1.78"
+numpy = "^1.26.1"
 
 
 [build-system]
